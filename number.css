@@ -1,0 +1,48 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  background-color: #2020208a;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(39, 39, 39, 0.253);
+}
+
+#guessInput {
+  padding: 8px 12px;
+  background-color: #a0a0a0;
+  border: solid #a0a0a0;
+  border-radius: 5px;
+}
+
+button {
+  padding: 6px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #f69a06;
+  border: solid #f69a06;
+  border-radius: 5px;
+}
+
+#result.correct {
+  animation: pulse 2s;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1, 1);
+  }
+
+  50% {
+    transform: scale(1.1, 1.1);
+  }
+}
